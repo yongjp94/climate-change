@@ -8,7 +8,11 @@
         <script src="https://code.jquery.com/jquery.min.js"></script>
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-        <script src="http://d3js.org/d3.v3.js"></script>
+        <script type="text/javascript" src="http://d3js.org/d3.v3.min.js"></script>
+        <script type="text/javascript" src="http://d3js.org/d3.geo.projection.v0.min.js"></script>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-1.10.2.js"></script>
+        <script type="text/javascript" src="http://d3js.org/queue.v1.min.js"></script>
+        <script type="text/javascript" src="http://d3js.org/topojson.v1.min.js"></script>
         
         <!-- Includes fullPage.js components-->
         <script src="bower_components/fullpage.js/vendors/jquery.slimscroll.js"></script>
@@ -16,6 +20,9 @@
         <link href="bower_components/fullpage.js/jquery.fullPage.css" type="text/css"/>
 
         <script src="/js/main.js"></script>
+        <script src="/js/GroupedBarChart.js"></script>
+        <script src="/js/heatMap.js"></script>
+        <script src="/js/MapPlot.js"></script>
         <link rel="stylesheet" type="text/css" href="css/main.css">
     </head>
 
@@ -26,14 +33,31 @@
     <div class="section active" id="section0">
         <h1>Intro Page</h1>
     </div>
+    
     <div class="section" id="section1">
         <h1>Section1</h1>
+        <p id="test"></p>
+	    <div id="wrapper">	
+   		<div id="map"></div>
+            <button id="play">play</button>
+            <span id="clock">year</span>
+	    </div>
     </div>
+    
     <div class="section" id="section2">
         <h1>Section2</h1>
+        <button type="button" id="button1" class="btn btn-primary">a</button>
+        <button type="button" id="button2" class="btn btn-primary">b</button>
+        <button type="button" id="button3" class="btn btn-primary">c</button>
+        <button type="button" id="button4" class="btn btn-primary">d</button>
+        <button type="button" id="button5" class="btn btn-primary">e</button>
+        <div id="map2"></div>
     </div>
+    
     <div class="section" id="section3">
         <h1>Section3</h1>
+        <div id="map3"></div>
+        <button type="button" id="button" class="btn btn-primary">Move Points</button>
     </div>
 </div>
 

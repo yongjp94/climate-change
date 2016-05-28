@@ -1,0 +1,9 @@
+.subunit-boundary {
+    fill: none;
+  stroke: white;
+  stroke-linejoin: round;
+}
+
+.subunit {
+    fill: #ddc;
+}
